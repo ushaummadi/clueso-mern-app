@@ -40,6 +40,25 @@ Import this file into Postman to test:
 - Tasks: CRUD on `/api/tasks`
 This documents where the collection lives and what it covers.
 ​
+## Deployment / Scaling Notes
+
+### Backend (API)
+
+- Can be deployed to a Node hosting platform such as Render.  
+- Start command: `node server.js` (or `npm start`).  
+- Environment variables (set in the platform dashboard):
+  - `PORT`
+  - `MONGO_URI` (MongoDB Atlas connection string)
+  - `JWT_SECRET`
+- CORS should allow the frontend origin (e.g. `https://my-frontend.vercel.app`). [web:678][web:689]
+
+### Frontend (React + Vite)
+
+- Can be deployed to Vercel or Netlify as a static site.  
+- Build command: `npm run build`  
+- Output directory: `dist`  
+- Environment variable:
+  - `VITE_API_BASE_URL` pointing to the deployed backend URL (e.g. `https://clueso-api.onrender.com`). [web:687][web:696]
 
 After editing:
 
