@@ -90,7 +90,7 @@ const Login = () => {
 
 <input
   name="password"
-  type="text"      // visible password
+  type="password"      // visible password
   value={form.password}
   onChange={handleChange}
   placeholder="enter the password"
