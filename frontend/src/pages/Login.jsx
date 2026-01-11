@@ -96,7 +96,7 @@ const Login = () => {
                 type="password"
                 value={form.password}
                 onChange={handleChange}
-                placeholder="••••••••"
+                placeholder="enter the password"
                 className="w-full rounded-xl border border-slate-200 px-3 py-2.5 text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[#8b5cf6] focus:border-transparent bg-slate-50/60"
               />
             </div>
