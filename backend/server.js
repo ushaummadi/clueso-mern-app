@@ -22,8 +22,8 @@ app.use(
   })
 );
 
-
-// This must come AFTER cors
+// handle CORS preflight for all routes
+app.options("*", cors());
 app.use(express.json());
 
 // connect db, then routes
@@ -33,9 +33,6 @@ app.use("/api/auth", authRoutes);
 app.use("/api/user", userRoutes);
 app.use("/api/tasks", taskRoutes);
 
-// error handler last
-app.use(errorHandler);
-
-
+// error handler lastapp.use(errorHandler);
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
