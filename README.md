@@ -59,6 +59,15 @@ This documents where the collection lives and what it covers.
 - Output directory: `dist`  
 - Environment variable:
   - `VITE_API_BASE_URL` pointing to the deployed backend URL (e.g. `https://clueso-api.onrender.com`). [web:687][web:696]
+### API Documentation / Postman
+
+Postman collection: `backend/clueso_api.postman_collection.json`
+
+It includes:
+- Auth: /api/auth/register, /api/auth/login
+- User: /api/user/profile (GET/PUT)
+- Tasks: /api/tasks (GET/POST), /api/tasks/:id (PUT/DELETE)
+
 
 After editing:
 
