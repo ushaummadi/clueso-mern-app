@@ -81,7 +81,7 @@ const Login = () => {
               <label className="block text-slate-700">Email</label>
               <input
                 name="email"
-                type="email"
+                type="text"
                 value={form.email}
                 onChange={handleChange}
                 placeholder="johndoe@example.com"
@@ -93,7 +93,7 @@ const Login = () => {
               <label className="block text-slate-700">Password</label>
               <input
                 name="password"
-                type="password"
+                type="text"
                 value={form.password}
                 onChange={handleChange}
                 placeholder="enter the password"
