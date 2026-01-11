@@ -79,26 +79,23 @@ const Login = () => {
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="space-y-1.5 text-sm">
               <label className="block text-slate-700">Email</label>
-              <input
-                name="email"
-                type="text"
-                value={form.email}
-                onChange={handleChange}
-                placeholder="johndoe@example.com"
-                className="w-full rounded-xl border border-slate-200 px-3 py-2.5 text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[#8b5cf6] focus:border-transparent bg-slate-50/60"
-              />
-            </div>
+             <input
+  name="email"
+  type="text"
+  value={form.email}
+  onChange={handleChange}
+  placeholder="johndoe@example.com"
+  className="w-full rounded-xl border border-slate-200 px-3 py-2.5 text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[#8b5cf6] focus:border-transparent bg-slate-50/60 text-slate-900"
+/>
 
-            <div className="space-y-1.5 text-sm">
-              <label className="block text-slate-700">Password</label>
-              <input
-                name="password"
-                type="text"
-                value={form.password}
-                onChange={handleChange}
-                placeholder="enter the password"
-                className="w-full rounded-xl border border-slate-200 px-3 py-2.5 text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[#8b5cf6] focus:border-transparent bg-slate-50/60"
-              />
+<input
+  name="password"
+  type="text"      // visible password
+  value={form.password}
+  onChange={handleChange}
+  placeholder="enter the password"
+  className="w-full rounded-xl border border-slate-200 px-3 py-2.5 text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[#8b5cf6] focus:border-transparent bg-slate-50/60 text-slate-900"
+/>
             </div>
 
             <button
